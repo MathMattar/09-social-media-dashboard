@@ -1,1 +1,77 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 3.6rem 2.5rem 4.6rem;
+}
+body .intro .intro__text .text__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(230deg, 17%, 14%);
+}
+body .intro .intro__text .text__sub-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(228deg, 12%, 44%);
+  letter-spacing: -0.02em;
+  margin: 0.4rem 0 2.4rem;
+}
+body .intro hr {
+  width: 100%;
+  border-bottom: 2px solid hsl(228deg, 12%, 44%);
+}
+body .intro .intro__toggle-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.6rem 0 4rem;
+}
+body .intro .intro__toggle-button .toggle__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(228deg, 12%, 44%);
+}
+body .intro .intro__toggle-button .toggle__button {
+  position: relative;
+  width: 4.8rem;
+  height: 2.4rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: hsl(230deg, 22%, 74%);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+body .intro .intro__toggle-button .toggle__button:hover {
+  background-image: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+}
+body .intro .intro__toggle-button .toggle__button:checked {
+  background-image: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+}
+body .intro .intro__toggle-button .toggle__button::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+body .intro .intro__toggle-button .toggle__button:checked:before {
+  transform: translateX(-2.4rem);
+}/*# sourceMappingURL=style.css.map */

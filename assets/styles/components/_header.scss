@@ -1,0 +1,72 @@
+@import '../abstract/root';
+@import '../abstract/global';
+
+body {
+    padding: 3.6rem 2.5rem 4.6rem;
+
+    .intro {
+        .intro__text {
+            .text__title {
+                @include text ($s24, $w7, $lt-main-text);
+            }
+
+            .text__sub-title {
+                @include text ($s15, $w7, $lt-sub-text);
+                letter-spacing: -0.02em;
+                margin: .4rem 0 2.4rem;
+            }
+        }
+
+        hr {
+            width: 100%;
+            border-bottom: 2px solid $lt-sub-text;
+        }
+
+        .intro__toggle-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1.6rem 0 4rem;
+
+            .toggle__title {
+                @include text ($s12, $w7, $lt-sub-text)
+            }
+
+            .toggle__button {
+                position: relative;
+                width: 4.8rem;
+                height: 2.4rem;
+                appearance: none;
+                background-color: $lt-toggle;
+                border-radius: 2rem;
+                cursor: pointer;
+                transition: .4s;
+
+                &:hover{
+                    background-image: $dt-toggle;
+                }
+
+                &:checked {
+                    background-image: $dt-toggle;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 3px;
+                    right: 3px;
+                    bottom: 3px;
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    background-color: $lt-top-background;
+                    border-radius: 50%;
+                    transition: .4s;
+                }
+
+                &:checked:before {
+                    transform: translateX(-2.4rem);
+                }
+            }
+        }
+    }
+}

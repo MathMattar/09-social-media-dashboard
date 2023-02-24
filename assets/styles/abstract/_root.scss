@@ -1,5 +1,17 @@
+// Mixins
+@mixin text ($size, $weight, $color){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+};
+
 // font family
 $inter: 'Inter', sans-serif;
+
+// font size
+$s12: 1.2rem;
+$s15: 1.5rem;
+$s24: 2.4rem;
 
 // Weigth
 $w4: 400;
