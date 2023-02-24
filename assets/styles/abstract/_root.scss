@@ -1,1 +1,29 @@
+// font family
+$inter: 'Inter', sans-serif;
 
+// Weigth
+$w4: 400;
+$w7: 700;
+
+// Colors
+// Default
+$def-lime-green: hsl(163, 72%, 41%);
+$def-bright-red: hsl(356, 69%, 56%);
+$def-facebook: hsl(208, 92%, 53%);
+$def-twitter: hsl(203, 89%, 53%);
+$def-instagram-gradient: linear-gradient(to right hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$def-youtube: hsl(348, 97%, 39%);
+// Dark theme
+$dt-toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%)); // Toggle button
+$dt-top-background: hsl(232, 19%, 15%); // Top background
+$dt-background: hsl(230, 17%, 14%); // Background 
+$dt-card-background: hsl(228, 28%, 20%); // Card background
+$dt-main-text: hsl(0, 0%, 100%); // Text main
+$dt-sub-text: hsl(228, 34%, 66%); // Text secondary
+// Light theme
+$lt-toggle: hsl(230, 22%, 74%); // Toggle button
+$lt-top-background: hsl(225, 100%, 98%); // Top backgroun
+$lt-background: hsl(0, 0%, 100%); // Background
+$lt-card-background: hsl(227, 47%, 96%); // Card background
+$lt-main-text: hsl(230, 17%, 14%); // Text main
+$lt-sub-text: hsl(228, 12%, 44%); // Text secondary
