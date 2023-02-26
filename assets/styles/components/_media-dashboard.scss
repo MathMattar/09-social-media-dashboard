@@ -1,0 +1,46 @@
+@import '../abstract/root';
+@import '../abstract/global';
+
+main {
+    .social-media__dashboard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .dashboard__card{
+            display: grid;
+            grid-template-areas: 
+            "icon user"
+            "value value"
+            "fans fans"
+            "icon-arrow variance";
+            align-items: center;
+            justify-items: center;
+            background-color: $lt-card-background;
+
+            .card__media {
+                grid-area: icon;
+            }
+
+            .card__user{
+                grid-area: user;
+            }
+
+            .card__value{
+                grid-area: value;
+            }
+
+            .card__fans{
+                grid-area: fans;
+            }
+
+            .card__arrow{
+                grid-area: icon-arrow;
+            }
+
+            .card__variance{
+                grid-area: variance;
+            }
+        }
+    }
+}
