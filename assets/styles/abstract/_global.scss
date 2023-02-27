@@ -1,17 +1,16 @@
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-  @import './root.scss';
+@import './root.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-  html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    font-family: $inter;
-  }
+html {
+  font-size: 62.5%;
+  font-family: $inter;
+}
 
-  .--dark {
-    $lt-toggle: $dt-toggle;
-    $lt-top-background: $dt-top-background;
-    $lt-background: $dt-background;
-    $lt-card-background: $dt-card-background;
-    $lt-main-text: $dt-main-text;
-    $lt-sub-text: $dt-sub-text;
-  }
+.--dark {
+  $lt-toggle: $dt-toggle;
+  $lt-top-background: $dt-top-background;
+  $lt-background: $dt-background;
+  $lt-card-background: $dt-card-background;
+  $lt-main-text: $dt-main-text;
+  $lt-sub-text: $dt-sub-text;
+}
