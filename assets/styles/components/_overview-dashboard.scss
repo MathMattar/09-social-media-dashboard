@@ -1,63 +1,61 @@
 @import '../abstract/root';
-@import '../abstract/global';
 
-body {
-    main {
-        .overview {
-            @include text ($s24, $w7, $lt-sub-text);
-            margin: 4.6rem 0 2.7rem
+main {
+
+    .overview {
+        @include text ($s24, $w7, var(--sub-text));
+        margin: 4.6rem 0 2.7rem
+    }
+
+    .overview__dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.6rem;
+
+        .dashboard__stats {
+            display: grid;
+            grid-template-areas:
+                "title media"
+                "value arrow-var";
+            grid-template-columns: 1fr auto;
+            background-color: var(--card-background);
+            width: 32.6rem;
+            height: 12.5rem;
+            padding: 2.6rem 3.1rem 1.9rem 2.4rem;
         }
 
-        .overview__dashboard {
+        .stats__title {
+            @include text ($s14, $w7, var(--sub-text));
+            grid-area: title;
+        }
+
+        .stats__media {
+            grid-area: media;
+            justify-self: end;
+        }
+
+        .stats__value {
+            @include text ($s32, $w7, var(--main-text));
+            grid-area: value;
+            align-self: end;
+        }
+
+        .stats__arrow-var {
+            grid-area: arrow-var;
+            align-self: end;
             display: flex;
-            flex-wrap: wrap;
-            gap: 1.6rem;
+            align-items: center;
 
-            .dashboard__stats {
-                display: grid;
-                grid-template-areas:
-                    "title media"
-                    "value arrow-var";
-                grid-template-columns: 1fr auto;
-                background-color: $lt-card-background;
-                width: 32.6rem;
-                height: 12.5rem;
-                padding: 2.6rem 3.1rem 1.9rem 2.4rem;
+
+            .stats__arrow {}
+
+            .stats__variance {
+                @include text ($s12, $w7, $def-lime-green);
+
             }
 
-            .stats__title {
-                @include text ($s14, $w7, $lt-sub-text);
-                grid-area: title;
-            }
-
-            .stats__media {
-                grid-area: media;
-                justify-self: end;
-            }
-
-            .stats__value {
-                @include text ($s32, $w7, $lt-main-text);
-                grid-area: value;
-                align-self: end;
-            }
-
-            .stats__arrow-var {
-                grid-area: arrow-var;
-                align-self: end;
-                display: flex;
-                align-items: center;
-
-
-                .stats__arrow {}
-
-                .stats__variance {
-                    @include text ($s12, $w7, $def-lime-green);
-
-                }
-
-                .--negative {
-                    color: $def-bright-red;
-                }
+            .--negative {
+                color: $def-bright-red;
             }
         }
     }

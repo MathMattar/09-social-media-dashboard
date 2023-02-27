@@ -1,93 +1,90 @@
 @import '../abstract/root';
-@import '../abstract/global';
 
-body {
-    main {
-        .social-media__dashboard {
+main {
+    .social-media__dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.4rem;
+
+        .dashboard__card {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 2.4rem;
+            align-content: space-between;
+            background-color: var(--card-background);
+            width: 32.5rem;
+            height: 21.6rem;
+            padding: 3rem 9.7rem 2.3rem 9.9rem;
 
-            .dashboard__card {
+            .card__media-user {
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-content: space-between;
-                background-color: $lt-card-background;
-                width: 32.5rem;
-                height: 21.6rem;
-                padding: 3rem 9.7rem 2.3rem 9.9rem;
+                align-items: center;
+                height: fit-content;
+                margin-bottom: 1.6rem;
 
-                .card__media-user {
-                    display: flex;
-                    align-items: center;
-                    height: fit-content;
-                    margin-bottom: 1.6rem;
-
-                    .card__media {
-                        margin-right: 0.8rem;
-                    }
-
-                    .card__user {
-                        @include text ($s12, $w7, $lt-sub-text);
-                    }
+                .card__media {
+                    margin-right: 0.8rem;
                 }
 
-                .card__value {
-                    @include text ($s57, $w7, $lt-main-text);
-                    letter-spacing: -0.05em;
-                }
-
-                .card__fans {
-                    @include text ($s12, $w4, $lt-main-text);
-                    letter-spacing: 0.42em;
-                    text-transform: uppercase;
-                }
-
-                .card__arrow-var {
-                    display: flex;
-                    align-items: center;
-                    height: fit-content;
-                    margin-top: 2.5rem;
-
-                    .card__arrow {
-                        padding-right: 0.2rem;
-                    }
-
-                    .card__variance {
-                        @include text ($s12, $w7, $def-lime-green);
-                        letter-spacing: 0.01em;
-                        padding-left: 0.2rem;
-                    }
-
-                    .--negative {
-                        @include text ($s12, $w7, $def-bright-red);
-                        letter-spacing: 0.01em;
-                    }
+                .card__user {
+                    @include text ($s12, $w7, var(--sub-text));
                 }
             }
 
-            .--facebook {
-                @include border(.4rem, solid, $def-facebook)
+            .card__value {
+                @include text ($s57, $w7, var(--main-text));
+                letter-spacing: -0.05em;
             }
 
-            .--twitter {
-                @include border(.4rem, solid, $def-twitter)
+            .card__fans {
+                @include text ($s12, $w4, var(--main-text));
+                letter-spacing: 0.42em;
+                text-transform: uppercase;
             }
 
-            .--instagram {
-                background-image: $def-instagram-gradient;
-                background-clip: padding-box;
-                background-repeat: no-repeat;
-                background-position: top;
-                background-size: 100% .4rem;
-                margin: .4rem 0 0 0;
-            }
+            .card__arrow-var {
+                display: flex;
+                align-items: center;
+                height: fit-content;
+                margin-top: 2.5rem;
 
-            .--youtube {
-                @include border(.4rem, solid, $def-youtube)
+                .card__arrow {
+                    padding-right: 0.2rem;
+                }
+
+                .card__variance {
+                    @include text ($s12, $w7, $def-lime-green);
+                    letter-spacing: 0.01em;
+                    padding-left: 0.2rem;
+                }
+
+                .--negative {
+                    @include text ($s12, $w7, $def-bright-red);
+                    letter-spacing: 0.01em;
+                }
             }
+        }
+
+        .--facebook {
+            @include border(.4rem, solid, $def-facebook)
+        }
+
+        .--twitter {
+            @include border(.4rem, solid, $def-twitter)
+        }
+
+        .--instagram {
+            background-image: $def-instagram-gradient;
+            background-clip: padding-box;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 100% .4rem;
+            margin: .4rem 0 0 0;
+        }
+
+        .--youtube {
+            @include border(.4rem, solid, $def-youtube)
         }
     }
 }
