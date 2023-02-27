@@ -1,7 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+:root {
+  --dt-toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --dt-top-background: hsl(232, 19%, 15%);
+  --dt-background: hsl(230, 17%, 14%);
+  --dt-card-background: hsl(228, 28%, 20%);
+  --dt-main-text: hsl(0, 0%, 100%);
+  --dt-sub-text: hsl(228, 34%, 66%);
+  --lt-toggle: hsl(230, 22%, 74%);
+  --lt-top-background: hsl(225, 100%, 98%);
+  --lt-background: hsl(0, 0%, 100%);
+  --lt-card-background: hsl(227, 47%, 96%);
+  --lt-main-text: hsl(230, 17%, 14%);
+  --lt-sub-text: hsl(228, 12%, 44%);
+}
+
+:root {
+  --toggle: var(--lt-toggle);
+  --top-background: var(--lt-top-background);
+  --background: var(--lt-background);
+  --card-background: var(--lt-card-background);
+  --main-text: var(--lt-main-text);
+  --sub-text: var(--lt-sub-text);
+}
+
+.--dark-mode {
+  --toggle: var(--dt-toggle);
+  --top-background: var(--dt-top-background);
+  --background: var(--dt-background);
+  --card-background: var(--dt-card-background);
+  --main-text: var(--dt-main-text);
+  --sub-text: var(--dt-sub-text);
+}
+
+:root {
+  --dt-toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --dt-top-background: hsl(232, 19%, 15%);
+  --dt-background: hsl(230, 17%, 14%);
+  --dt-card-background: hsl(228, 28%, 20%);
+  --dt-main-text: hsl(0, 0%, 100%);
+  --dt-sub-text: hsl(228, 34%, 66%);
+  --lt-toggle: hsl(230, 22%, 74%);
+  --lt-top-background: hsl(225, 100%, 98%);
+  --lt-background: hsl(0, 0%, 100%);
+  --lt-card-background: hsl(227, 47%, 96%);
+  --lt-main-text: hsl(230, 17%, 14%);
+  --lt-sub-text: hsl(228, 12%, 44%);
+}
+
+:root {
+  --toggle: var(--lt-toggle);
+  --top-background: var(--lt-top-background);
+  --background: var(--lt-background);
+  --card-background: var(--lt-card-background);
+  --main-text: var(--lt-main-text);
+  --sub-text: var(--lt-sub-text);
+}
+
+.--dark-mode {
+  --toggle: var(--dt-toggle);
+  --top-background: var(--dt-top-background);
+  --background: var(--dt-background);
+  --card-background: var(--dt-card-background);
+  --main-text: var(--dt-main-text);
+  --sub-text: var(--dt-sub-text);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,33 +74,71 @@ html {
   font-family: "Inter", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
+:root {
+  --dt-toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --dt-top-background: hsl(232, 19%, 15%);
+  --dt-background: hsl(230, 17%, 14%);
+  --dt-card-background: hsl(228, 28%, 20%);
+  --dt-main-text: hsl(0, 0%, 100%);
+  --dt-sub-text: hsl(228, 34%, 66%);
+  --lt-toggle: hsl(230, 22%, 74%);
+  --lt-top-background: hsl(225, 100%, 98%);
+  --lt-background: hsl(0, 0%, 100%);
+  --lt-card-background: hsl(227, 47%, 96%);
+  --lt-main-text: hsl(230, 17%, 14%);
+  --lt-sub-text: hsl(228, 12%, 44%);
 }
 
-html {
-  font-size: 62.5%;
-  font-family: "Inter", sans-serif;
+:root {
+  --toggle: var(--lt-toggle);
+  --top-background: var(--lt-top-background);
+  --background: var(--lt-background);
+  --card-background: var(--lt-card-background);
+  --main-text: var(--lt-main-text);
+  --sub-text: var(--lt-sub-text);
+}
+
+.--dark-mode {
+  --toggle: var(--dt-toggle);
+  --top-background: var(--dt-top-background);
+  --background: var(--dt-background);
+  --card-background: var(--dt-card-background);
+  --main-text: var(--dt-main-text);
+  --sub-text: var(--dt-sub-text);
 }
 
 body {
+  position: relative;
+  background-color: var(--background);
   padding: 3.6rem 2.4rem 4.6rem 2.5rem;
+  z-index: 0;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 23.5rem;
+  border-radius: 0 0 2rem 2rem;
+  background-color: var(--top-background);
+  z-index: -1;
 }
 body .intro .intro__text .text__title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: hsl(230, 17%, 14%);
+  color: var(--main-text);
 }
 body .intro .intro__text .text__sub-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: hsl(228, 12%, 44%);
+  color: var(--sub-text);
   letter-spacing: -0.02em;
   margin: 0.4rem 0 2.4rem;
 }
 body .intro hr {
   width: 100%;
-  border-bottom: 2px solid hsl(228, 12%, 44%);
+  border-bottom: 2px solid var(--sub-text);
 }
 body .intro .intro__toggle-button {
   display: flex;
@@ -48,7 +149,7 @@ body .intro .intro__toggle-button {
 body .intro .intro__toggle-button .toggle__title {
   font-size: 1.2rem;
   font-weight: 700;
-  color: hsl(228, 12%, 44%);
+  color: var(--sub-text);
 }
 body .intro .intro__toggle-button .toggle__button {
   position: relative;
@@ -57,16 +158,16 @@ body .intro .intro__toggle-button .toggle__button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: hsl(230, 22%, 74%);
+  background-color: var(--toggle);
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.4s;
 }
 body .intro .intro__toggle-button .toggle__button:hover {
-  background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  background-image: var(--dt-toggle);
 }
 body .intro .intro__toggle-button .toggle__button:checked {
-  background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  background-image: var(--dt-toggle);
 }
 body .intro .intro__toggle-button .toggle__button::before {
   content: "";
@@ -76,7 +177,7 @@ body .intro .intro__toggle-button .toggle__button::before {
   bottom: 3px;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: hsl(225, 100%, 98%);
+  background-color: var(--top-background);
   border-radius: 50%;
   transition: 0.4s;
 }
@@ -84,89 +185,113 @@ body .intro .intro__toggle-button .toggle__button:checked:before {
   transform: translateX(-2.4rem);
 }
 
-* {
-  box-sizing: border-box;
+:root {
+  --dt-toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --dt-top-background: hsl(232, 19%, 15%);
+  --dt-background: hsl(230, 17%, 14%);
+  --dt-card-background: hsl(228, 28%, 20%);
+  --dt-main-text: hsl(0, 0%, 100%);
+  --dt-sub-text: hsl(228, 34%, 66%);
+  --lt-toggle: hsl(230, 22%, 74%);
+  --lt-top-background: hsl(225, 100%, 98%);
+  --lt-background: hsl(0, 0%, 100%);
+  --lt-card-background: hsl(227, 47%, 96%);
+  --lt-main-text: hsl(230, 17%, 14%);
+  --lt-sub-text: hsl(228, 12%, 44%);
 }
 
-html {
-  font-size: 62.5%;
-  font-family: "Inter", sans-serif;
+:root {
+  --toggle: var(--lt-toggle);
+  --top-background: var(--lt-top-background);
+  --background: var(--lt-background);
+  --card-background: var(--lt-card-background);
+  --main-text: var(--lt-main-text);
+  --sub-text: var(--lt-sub-text);
 }
 
-body main .social-media__dashboard {
+.--dark-mode {
+  --toggle: var(--dt-toggle);
+  --top-background: var(--dt-top-background);
+  --background: var(--dt-background);
+  --card-background: var(--dt-card-background);
+  --main-text: var(--dt-main-text);
+  --sub-text: var(--dt-sub-text);
+}
+
+main .social-media__dashboard {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2.4rem;
 }
-body main .social-media__dashboard .dashboard__card {
+main .social-media__dashboard .dashboard__card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
-  background-color: hsl(227, 47%, 96%);
+  background-color: var(--card-background);
   width: 32.5rem;
   height: 21.6rem;
   padding: 3rem 9.7rem 2.3rem 9.9rem;
 }
-body main .social-media__dashboard .dashboard__card .card__media-user {
+main .social-media__dashboard .dashboard__card .card__media-user {
   display: flex;
   align-items: center;
   height: -moz-fit-content;
   height: fit-content;
   margin-bottom: 1.6rem;
 }
-body main .social-media__dashboard .dashboard__card .card__media-user .card__media {
+main .social-media__dashboard .dashboard__card .card__media-user .card__media {
   margin-right: 0.8rem;
 }
-body main .social-media__dashboard .dashboard__card .card__media-user .card__user {
+main .social-media__dashboard .dashboard__card .card__media-user .card__user {
   font-size: 1.2rem;
   font-weight: 700;
-  color: hsl(228, 12%, 44%);
+  color: var(--sub-text);
 }
-body main .social-media__dashboard .dashboard__card .card__value {
+main .social-media__dashboard .dashboard__card .card__value {
   font-size: 5.7rem;
   font-weight: 700;
-  color: hsl(230, 17%, 14%);
+  color: var(--main-text);
   letter-spacing: -0.05em;
 }
-body main .social-media__dashboard .dashboard__card .card__fans {
+main .social-media__dashboard .dashboard__card .card__fans {
   font-size: 1.2rem;
   font-weight: 400;
-  color: hsl(230, 17%, 14%);
+  color: var(--main-text);
   letter-spacing: 0.42em;
   text-transform: uppercase;
 }
-body main .social-media__dashboard .dashboard__card .card__arrow-var {
+main .social-media__dashboard .dashboard__card .card__arrow-var {
   display: flex;
   align-items: center;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 2.5rem;
 }
-body main .social-media__dashboard .dashboard__card .card__arrow-var .card__arrow {
+main .social-media__dashboard .dashboard__card .card__arrow-var .card__arrow {
   padding-right: 0.2rem;
 }
-body main .social-media__dashboard .dashboard__card .card__arrow-var .card__variance {
+main .social-media__dashboard .dashboard__card .card__arrow-var .card__variance {
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(163, 72%, 41%);
   letter-spacing: 0.01em;
   padding-left: 0.2rem;
 }
-body main .social-media__dashboard .dashboard__card .card__arrow-var .--negative {
+main .social-media__dashboard .dashboard__card .card__arrow-var .--negative {
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(356, 69%, 56%);
   letter-spacing: 0.01em;
 }
-body main .social-media__dashboard .--facebook {
+main .social-media__dashboard .--facebook {
   border-top: 0.4rem solid hsl(208, 92%, 53%);
 }
-body main .social-media__dashboard .--twitter {
+main .social-media__dashboard .--twitter {
   border-top: 0.4rem solid hsl(203, 89%, 53%);
 }
-body main .social-media__dashboard .--instagram {
+main .social-media__dashboard .--instagram {
   background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   background-clip: padding-box;
   background-repeat: no-repeat;
@@ -174,67 +299,91 @@ body main .social-media__dashboard .--instagram {
   background-size: 100% 0.4rem;
   margin: 0.4rem 0 0 0;
 }
-body main .social-media__dashboard .--youtube {
+main .social-media__dashboard .--youtube {
   border-top: 0.4rem solid hsl(348, 97%, 39%);
 }
 
-* {
-  box-sizing: border-box;
+:root {
+  --dt-toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --dt-top-background: hsl(232, 19%, 15%);
+  --dt-background: hsl(230, 17%, 14%);
+  --dt-card-background: hsl(228, 28%, 20%);
+  --dt-main-text: hsl(0, 0%, 100%);
+  --dt-sub-text: hsl(228, 34%, 66%);
+  --lt-toggle: hsl(230, 22%, 74%);
+  --lt-top-background: hsl(225, 100%, 98%);
+  --lt-background: hsl(0, 0%, 100%);
+  --lt-card-background: hsl(227, 47%, 96%);
+  --lt-main-text: hsl(230, 17%, 14%);
+  --lt-sub-text: hsl(228, 12%, 44%);
 }
 
-html {
-  font-size: 62.5%;
-  font-family: "Inter", sans-serif;
+:root {
+  --toggle: var(--lt-toggle);
+  --top-background: var(--lt-top-background);
+  --background: var(--lt-background);
+  --card-background: var(--lt-card-background);
+  --main-text: var(--lt-main-text);
+  --sub-text: var(--lt-sub-text);
 }
 
-body main .overview {
+.--dark-mode {
+  --toggle: var(--dt-toggle);
+  --top-background: var(--dt-top-background);
+  --background: var(--dt-background);
+  --card-background: var(--dt-card-background);
+  --main-text: var(--dt-main-text);
+  --sub-text: var(--dt-sub-text);
+}
+
+main .overview {
   font-size: 2.4rem;
   font-weight: 700;
-  color: hsl(228, 12%, 44%);
+  color: var(--sub-text);
   margin: 4.6rem 0 2.7rem;
 }
-body main .overview__dashboard {
+main .overview__dashboard {
   display: flex;
   flex-wrap: wrap;
   gap: 1.6rem;
 }
-body main .overview__dashboard .dashboard__stats {
+main .overview__dashboard .dashboard__stats {
   display: grid;
   grid-template-areas: "title media" "value arrow-var";
   grid-template-columns: 1fr auto;
-  background-color: hsl(227, 47%, 96%);
+  background-color: var(--card-background);
   width: 32.6rem;
   height: 12.5rem;
   padding: 2.6rem 3.1rem 1.9rem 2.4rem;
 }
-body main .overview__dashboard .stats__title {
+main .overview__dashboard .stats__title {
   font-size: 1.4rem;
   font-weight: 700;
-  color: hsl(228, 12%, 44%);
+  color: var(--sub-text);
   grid-area: title;
 }
-body main .overview__dashboard .stats__media {
+main .overview__dashboard .stats__media {
   grid-area: media;
   justify-self: end;
 }
-body main .overview__dashboard .stats__value {
+main .overview__dashboard .stats__value {
   font-size: 3.2rem;
   font-weight: 700;
-  color: hsl(230, 17%, 14%);
+  color: var(--main-text);
   grid-area: value;
   align-self: end;
 }
-body main .overview__dashboard .stats__arrow-var {
+main .overview__dashboard .stats__arrow-var {
   grid-area: arrow-var;
   align-self: end;
   display: flex;
   align-items: center;
 }
-body main .overview__dashboard .stats__arrow-var .stats__variance {
+main .overview__dashboard .stats__arrow-var .stats__variance {
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(163, 72%, 41%);
 }
-body main .overview__dashboard .stats__arrow-var .--negative {
+main .overview__dashboard .stats__arrow-var .--negative {
   color: hsl(356, 69%, 56%);
 }/*# sourceMappingURL=style.css.map */
