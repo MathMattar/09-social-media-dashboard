@@ -9,14 +9,3 @@ html {
   font-size: 62.5%;
   font-family: $inter;
 }
-
-body {
-  .--dark {
-    $lt-toggle: $dt-toggle;
-    $lt-top-background: $dt-top-background;
-    $lt-background: $dt-background;
-    $lt-card-background: $dt-card-background;
-    $lt-main-text: $dt-main-text;
-    $lt-sub-text: $dt-sub-text;
-  }
-}
