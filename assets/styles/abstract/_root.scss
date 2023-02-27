@@ -5,6 +5,10 @@
     color: $color;
 };
 
+@mixin border ($thickness, $style, $color){
+    border-top: $thickness $style  $color
+}
+
 // font family
 $inter: 'Inter', sans-serif;
 
@@ -14,6 +18,7 @@ $s14: 1.4rem;
 $s15: 1.5rem;
 $s24: 2.4rem;
 $s32: 3.2rem;
+$s57: 5.7rem;
 
 // Weigth
 $w4: 400;
@@ -25,7 +30,7 @@ $def-lime-green: hsl(163, 72%, 41%);
 $def-bright-red: hsl(356, 69%, 56%);
 $def-facebook: hsl(208, 92%, 53%);
 $def-twitter: hsl(203, 89%, 53%);
-$def-instagram-gradient: linear-gradient(to right hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$def-instagram-gradient: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
 $def-youtube: hsl(348, 97%, 39%);
 // Dark theme
 $dt-toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%)); // Toggle button
