@@ -1,36 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Inter", sans-serif;
 }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Inter", sans-serif;
 }
 
 body {
-  padding: 3.6rem 2.5rem 4.6rem;
+  padding: 3.6rem 2.4rem 4.6rem 2.5rem;
 }
 body .intro .intro__text .text__title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: hsl(230, 17%, 14%);
+  color: hsl(230deg, 17%, 14%);
 }
 body .intro .intro__text .text__sub-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: hsl(228, 12%, 44%);
+  color: hsl(228deg, 12%, 44%);
   letter-spacing: -0.02em;
   margin: 0.4rem 0 2.4rem;
 }
 body .intro hr {
   width: 100%;
-  border-bottom: 2px solid hsl(228, 12%, 44%);
+  border-bottom: 2px solid hsl(228deg, 12%, 44%);
 }
 body .intro .intro__toggle-button {
   display: flex;
@@ -41,7 +40,7 @@ body .intro .intro__toggle-button {
 body .intro .intro__toggle-button .toggle__title {
   font-size: 1.2rem;
   font-weight: 700;
-  color: hsl(228, 12%, 44%);
+  color: hsl(228deg, 12%, 44%);
 }
 body .intro .intro__toggle-button .toggle__button {
   position: relative;
@@ -50,16 +49,16 @@ body .intro .intro__toggle-button .toggle__button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: hsl(230, 22%, 74%);
+  background-color: hsl(230deg, 22%, 74%);
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.4s;
 }
 body .intro .intro__toggle-button .toggle__button:hover {
-  background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  background-image: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
 }
 body .intro .intro__toggle-button .toggle__button:checked {
-  background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  background-image: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
 }
 body .intro .intro__toggle-button .toggle__button::before {
   content: "";
@@ -69,7 +68,7 @@ body .intro .intro__toggle-button .toggle__button::before {
   bottom: 3px;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: hsl(225, 100%, 98%);
+  background-color: hsl(225deg, 100%, 98%);
   border-radius: 50%;
   transition: 0.4s;
 }
@@ -78,7 +77,6 @@ body .intro .intro__toggle-button .toggle__button:checked:before {
 }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Inter", sans-serif;
 }
@@ -93,7 +91,7 @@ main .social-media__dashboard .dashboard__card {
   grid-template-areas: "icon user" "value value" "fans fans" "icon-arrow variance";
   align-items: center;
   justify-items: center;
-  background-color: hsl(227, 47%, 96%);
+  background-color: hsl(227deg, 47%, 96%);
 }
 main .social-media__dashboard .dashboard__card .card__media {
   grid-area: icon;
@@ -112,4 +110,56 @@ main .social-media__dashboard .dashboard__card .card__arrow {
 }
 main .social-media__dashboard .dashboard__card .card__variance {
   grid-area: variance;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+main .overview__dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+main .overview__dashboard .dashboard__stats {
+  display: grid;
+  grid-template-areas: "title media" "value arrow-var";
+  grid-template-columns: 1fr auto;
+  background-color: hsl(227deg, 47%, 96%);
+  width: 32.6rem;
+  height: 12.5rem;
+  padding: 2.6rem 3.1rem 1.9rem 2.4rem;
+  box-sizing: border-box;
+}
+main .overview__dashboard .stats__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(228deg, 12%, 44%);
+  grid-area: title;
+}
+main .overview__dashboard .stats__media {
+  grid-area: media;
+  justify-self: end;
+}
+main .overview__dashboard .stats__value {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: hsl(230deg, 17%, 14%);
+  grid-area: value;
+  align-self: end;
+}
+main .overview__dashboard .stats__arrow-var {
+  grid-area: arrow-var;
+  align-self: end;
+  display: flex;
+  align-items: center;
+}
+main .overview__dashboard .stats__arrow-var .stats__variance {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(163deg, 72%, 41%);
+}
+main .overview__dashboard .stats__arrow-var .--negative {
+  color: hsl(356deg, 69%, 56%);
 }/*# sourceMappingURL=style.css.map */
