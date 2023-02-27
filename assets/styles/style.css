@@ -93,13 +93,13 @@ html {
   font-family: "Inter", sans-serif;
 }
 
-main .social-media__dashboard {
+body main .social-media__dashboard {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2.4rem;
 }
-main .social-media__dashboard .dashboard__card {
+body main .social-media__dashboard .dashboard__card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -109,64 +109,64 @@ main .social-media__dashboard .dashboard__card {
   height: 21.6rem;
   padding: 3rem 9.7rem 2.3rem 9.9rem;
 }
-main .social-media__dashboard .dashboard__card .card__media-user {
+body main .social-media__dashboard .dashboard__card .card__media-user {
   display: flex;
   align-items: center;
   height: -moz-fit-content;
   height: fit-content;
   margin-bottom: 1.6rem;
 }
-main .social-media__dashboard .dashboard__card .card__media-user .card__media {
+body main .social-media__dashboard .dashboard__card .card__media-user .card__media {
   margin-right: 0.8rem;
 }
-main .social-media__dashboard .dashboard__card .card__media-user .card__user {
+body main .social-media__dashboard .dashboard__card .card__media-user .card__user {
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(228, 12%, 44%);
 }
-main .social-media__dashboard .dashboard__card .card__value {
+body main .social-media__dashboard .dashboard__card .card__value {
   font-size: 5.7rem;
   font-weight: 700;
   color: hsl(230, 17%, 14%);
   letter-spacing: -0.05em;
 }
-main .social-media__dashboard .dashboard__card .card__fans {
+body main .social-media__dashboard .dashboard__card .card__fans {
   font-size: 1.2rem;
   font-weight: 400;
   color: hsl(230, 17%, 14%);
   letter-spacing: 0.42em;
   text-transform: uppercase;
 }
-main .social-media__dashboard .dashboard__card .card__arrow-var {
+body main .social-media__dashboard .dashboard__card .card__arrow-var {
   display: flex;
   align-items: center;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 2.5rem;
 }
-main .social-media__dashboard .dashboard__card .card__arrow-var .card__arrow {
+body main .social-media__dashboard .dashboard__card .card__arrow-var .card__arrow {
   padding-right: 0.2rem;
 }
-main .social-media__dashboard .dashboard__card .card__arrow-var .card__variance {
+body main .social-media__dashboard .dashboard__card .card__arrow-var .card__variance {
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(163, 72%, 41%);
   letter-spacing: 0.01em;
   padding-left: 0.2rem;
 }
-main .social-media__dashboard .dashboard__card .card__arrow-var .--negative {
+body main .social-media__dashboard .dashboard__card .card__arrow-var .--negative {
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(356, 69%, 56%);
   letter-spacing: 0.01em;
 }
-main .social-media__dashboard .--facebook {
+body main .social-media__dashboard .--facebook {
   border-top: 0.4rem solid hsl(208, 92%, 53%);
 }
-main .social-media__dashboard .--twitter {
+body main .social-media__dashboard .--twitter {
   border-top: 0.4rem solid hsl(203, 89%, 53%);
 }
-main .social-media__dashboard .--instagram {
+body main .social-media__dashboard .--instagram {
   background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   background-clip: padding-box;
   background-repeat: no-repeat;
@@ -174,7 +174,7 @@ main .social-media__dashboard .--instagram {
   background-size: 100% 0.4rem;
   margin: 0.4rem 0 0 0;
 }
-main .social-media__dashboard .--youtube {
+body main .social-media__dashboard .--youtube {
   border-top: 0.4rem solid hsl(348, 97%, 39%);
 }
 
@@ -187,18 +187,18 @@ html {
   font-family: "Inter", sans-serif;
 }
 
-main .overview {
+body main .overview {
   font-size: 2.4rem;
   font-weight: 700;
   color: hsl(228, 12%, 44%);
   margin: 4.6rem 0 2.7rem;
 }
-main .overview__dashboard {
+body main .overview__dashboard {
   display: flex;
   flex-wrap: wrap;
   gap: 1.6rem;
 }
-main .overview__dashboard .dashboard__stats {
+body main .overview__dashboard .dashboard__stats {
   display: grid;
   grid-template-areas: "title media" "value arrow-var";
   grid-template-columns: 1fr auto;
@@ -207,34 +207,34 @@ main .overview__dashboard .dashboard__stats {
   height: 12.5rem;
   padding: 2.6rem 3.1rem 1.9rem 2.4rem;
 }
-main .overview__dashboard .stats__title {
+body main .overview__dashboard .stats__title {
   font-size: 1.4rem;
   font-weight: 700;
   color: hsl(228, 12%, 44%);
   grid-area: title;
 }
-main .overview__dashboard .stats__media {
+body main .overview__dashboard .stats__media {
   grid-area: media;
   justify-self: end;
 }
-main .overview__dashboard .stats__value {
+body main .overview__dashboard .stats__value {
   font-size: 3.2rem;
   font-weight: 700;
   color: hsl(230, 17%, 14%);
   grid-area: value;
   align-self: end;
 }
-main .overview__dashboard .stats__arrow-var {
+body main .overview__dashboard .stats__arrow-var {
   grid-area: arrow-var;
   align-self: end;
   display: flex;
   align-items: center;
 }
-main .overview__dashboard .stats__arrow-var .stats__variance {
+body main .overview__dashboard .stats__arrow-var .stats__variance {
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(163, 72%, 41%);
 }
-main .overview__dashboard .stats__arrow-var .--negative {
+body main .overview__dashboard .stats__arrow-var .--negative {
   color: hsl(356, 69%, 56%);
 }/*# sourceMappingURL=style.css.map */
