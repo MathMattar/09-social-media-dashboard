@@ -41,6 +41,10 @@ main {
                 @include text ($stats-value, $w7, var(--main-text));
             }
 
+            .stats__media {
+                align-self: end;
+            }
+
             .stats__arrow-var {
                 align-self: end;
                 display: flex;

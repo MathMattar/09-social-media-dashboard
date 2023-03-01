@@ -401,6 +401,9 @@ main .overview__dashboard .stats__container .stats__value {
   font-weight: 700;
   color: var(--main-text);
 }
+main .overview__dashboard .stats__container .stats__media {
+  align-self: end;
+}
 main .overview__dashboard .stats__container .stats__arrow-var {
   align-self: end;
   display: flex;
