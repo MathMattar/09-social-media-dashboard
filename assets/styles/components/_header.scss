@@ -3,7 +3,7 @@
 body {
     position: relative;
     background-color: var(--background);
-    padding: 3.6rem 2.4rem 4.6rem 2.5rem;
+    padding: 3.6rem 2.5rem 4.6rem 2.5rem;
     z-index: 0;
     
     &::before {
@@ -21,19 +21,20 @@ body {
     .intro {
         .intro__text {
             .text__title {
-                @include text ($s24, $w7, var(--main-text));
+                @include text ($title, $w7, var(--main-text));
             }
 
-            .text__sub-title {
-                @include text ($s15, $w7, var(--sub-text));
-                letter-spacing: -0.02em;
-                margin: .4rem 0 2.4rem;
+            .text__subtitle {
+                @include text ($subtitle, $w7, var(--sub-text));
+                letter-spacing: 0.01em;
+                margin: .43rem 0 2.4rem;
             }
         }
 
         hr {
             width: 100%;
             border-bottom: 2px solid var(--sub-text);
+            margin: unset;
         }
 
         .intro__toggle-button {
@@ -43,7 +44,7 @@ body {
             margin: 1.6rem 0 4rem;
 
             .toggle__title {
-                @include text ($s12, $w7, var(--sub-text));
+                @include text ($def-mobile, $w7, var(--sub-text));
             }
 
             .toggle__button {

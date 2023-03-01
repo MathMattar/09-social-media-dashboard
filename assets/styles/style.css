@@ -110,7 +110,7 @@ html {
 body {
   position: relative;
   background-color: var(--background);
-  padding: 3.6rem 2.4rem 4.6rem 2.5rem;
+  padding: 3.6rem 2.5rem 4.6rem 2.5rem;
   z-index: 0;
 }
 body::before {
@@ -129,16 +129,17 @@ body .intro .intro__text .text__title {
   font-weight: 700;
   color: var(--main-text);
 }
-body .intro .intro__text .text__sub-title {
+body .intro .intro__text .text__subtitle {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--sub-text);
-  letter-spacing: -0.02em;
-  margin: 0.4rem 0 2.4rem;
+  letter-spacing: 0.01em;
+  margin: 0.43rem 0 2.4rem;
 }
 body .intro hr {
   width: 100%;
   border-bottom: 2px solid var(--sub-text);
+  margin: unset;
 }
 body .intro .intro__toggle-button {
   display: flex;
@@ -230,8 +231,7 @@ main .social-media__dashboard .dashboard__card {
   justify-content: center;
   align-content: space-between;
   background-color: var(--card-background);
-  width: 32.5rem;
-  height: 21.6rem;
+  max-width: 32.5rem;
   padding: 3rem 9.7rem 2.3rem 9.9rem;
 }
 main .social-media__dashboard .dashboard__card .card__media-user {
@@ -239,7 +239,7 @@ main .social-media__dashboard .dashboard__card .card__media-user {
   align-items: center;
   height: -moz-fit-content;
   height: fit-content;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2rem;
 }
 main .social-media__dashboard .dashboard__card .card__media-user .card__media {
   margin-right: 0.8rem;
@@ -254,6 +254,7 @@ main .social-media__dashboard .dashboard__card .card__value {
   font-weight: 700;
   color: var(--main-text);
   letter-spacing: -0.05em;
+  margin: 0.5rem 0;
 }
 main .social-media__dashboard .dashboard__card .card__fans {
   font-size: 1.2rem;
@@ -267,7 +268,7 @@ main .social-media__dashboard .dashboard__card .card__arrow-var {
   align-items: center;
   height: -moz-fit-content;
   height: fit-content;
-  margin-top: 2.5rem;
+  margin-top: 2.8rem;
 }
 main .social-media__dashboard .dashboard__card .card__arrow-var .card__arrow {
   padding-right: 0.2rem;
@@ -345,45 +346,100 @@ main .overview {
 main .overview__dashboard {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1.6rem;
 }
 main .overview__dashboard .dashboard__stats {
-  display: grid;
-  grid-template-areas: "title media" "value arrow-var";
-  grid-template-columns: 1fr auto;
+  display: flex;
+  justify-content: space-between;
   background-color: var(--card-background);
-  width: 32.6rem;
-  height: 12.5rem;
-  padding: 2.6rem 3.1rem 1.9rem 2.4rem;
+  width: 100%;
+  max-width: 32.5rem;
+  padding: 2.7rem 3.1rem 1.9rem 2.4rem;
 }
-main .overview__dashboard .stats__title {
-  font-size: 1.4rem;
+main .overview__dashboard .stats__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+main .overview__dashboard .stats__container .stats__title {
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--sub-text);
-  grid-area: title;
 }
-main .overview__dashboard .stats__media {
-  grid-area: media;
-  justify-self: end;
-}
-main .overview__dashboard .stats__value {
+main .overview__dashboard .stats__container .stats__value {
   font-size: 3.2rem;
   font-weight: 700;
   color: var(--main-text);
-  grid-area: value;
-  align-self: end;
 }
-main .overview__dashboard .stats__arrow-var {
-  grid-area: arrow-var;
+main .overview__dashboard .stats__container .stats__arrow-var {
   align-self: end;
   display: flex;
   align-items: center;
 }
-main .overview__dashboard .stats__arrow-var .stats__variance {
+main .overview__dashboard .stats__container .stats__arrow-var .stats__variance {
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(163, 72%, 41%);
 }
-main .overview__dashboard .stats__arrow-var .--negative {
+main .overview__dashboard .stats__container .stats__arrow-var .--negative {
   color: hsl(356, 69%, 56%);
+}
+
+:root {
+  --dt-toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --dt-top-background: hsl(232, 19%, 15%);
+  --dt-background: hsl(230, 17%, 14%);
+  --dt-card-background: hsl(228, 28%, 20%);
+  --dt-main-text: hsl(0, 0%, 100%);
+  --dt-sub-text: hsl(228, 34%, 66%);
+  --lt-toggle: hsl(230, 22%, 74%);
+  --lt-top-background: hsl(225, 100%, 98%);
+  --lt-background: hsl(0, 0%, 100%);
+  --lt-card-background: hsl(227, 47%, 96%);
+  --lt-main-text: hsl(230, 17%, 14%);
+  --lt-sub-text: hsl(228, 12%, 44%);
+}
+
+:root {
+  --toggle: var(--lt-toggle);
+  --top-background: var(--lt-top-background);
+  --background: var(--lt-background);
+  --card-background: var(--lt-card-background);
+  --main-text: var(--lt-main-text);
+  --sub-text: var(--lt-sub-text);
+}
+
+.--dark-mode {
+  --toggle: var(--dt-toggle);
+  --top-background: var(--dt-top-background);
+  --background: var(--dt-background);
+  --card-background: var(--dt-card-background);
+  --main-text: var(--dt-main-text);
+  --sub-text: var(--dt-sub-text);
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    padding: 3.6rem 16.4rem 7.5rem 16.2rem;
+  }
+  body .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .intro .intro__text .text__title {
+    font-size: 2.8rem;
+  }
+  body .intro hr {
+    display: none;
+  }
+  body main .social-media__dashboard .dashboard__card {
+    max-width: 25.6rem;
+    padding: 3.3rem 6.3rem 2.3rem;
+  }
+  body main .overview__dashboard .dashboard__stats {
+    max-width: 25.6rem;
+  }
 }/*# sourceMappingURL=style.css.map */
