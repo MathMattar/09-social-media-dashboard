@@ -46,6 +46,7 @@ $def-youtube: hsl(348, 97%, 39%);
     --dt-card-background: hsl(228, 28%, 20%); // Card background
     --dt-main-text: hsl(0, 0%, 100%); // Text main
     --dt-sub-text: hsl(228, 34%, 66%); // Text secondary
+    --dt-hover: hsl(228, 26%, 27%);
     // Light theme
     --lt-toggle: hsl(230, 22%, 74%); // Toggle button
     --lt-top-background: hsl(225, 100%, 98%); // Top backgroun
@@ -53,6 +54,7 @@ $def-youtube: hsl(348, 97%, 39%);
     --lt-card-background: hsl(227, 47%, 96%); // Card background
     --lt-main-text: hsl(230, 17%, 14%); // Text main
     --lt-sub-text: hsl(228, 12%, 44%); // Text secondary
+    --lt-hover: hsl(232, 33%, 91%);
 }
 
 :root {
@@ -62,6 +64,7 @@ $def-youtube: hsl(348, 97%, 39%);
     --card-background: var(--lt-card-background);
     --main-text: var(--lt-main-text);
     --sub-text: var(--lt-sub-text);
+    --hover: var(--lt-hover);
 }
 
 .--dark-mode {
@@ -71,4 +74,5 @@ $def-youtube: hsl(348, 97%, 39%);
     --card-background: var(--dt-card-background);
     --main-text: var(--dt-main-text);
     --sub-text: var(--dt-sub-text);
+    --hover: var(--dt-hover);
 }

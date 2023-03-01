@@ -6,12 +6,14 @@
   --dt-card-background: hsl(228, 28%, 20%);
   --dt-main-text: hsl(0, 0%, 100%);
   --dt-sub-text: hsl(228, 34%, 66%);
+  --dt-hover: hsl(228, 26%, 27%);
   --lt-toggle: hsl(230, 22%, 74%);
   --lt-top-background: hsl(225, 100%, 98%);
   --lt-background: hsl(0, 0%, 100%);
   --lt-card-background: hsl(227, 47%, 96%);
   --lt-main-text: hsl(230, 17%, 14%);
   --lt-sub-text: hsl(228, 12%, 44%);
+  --lt-hover: hsl(232, 33%, 91%);
 }
 
 :root {
@@ -21,6 +23,7 @@
   --card-background: var(--lt-card-background);
   --main-text: var(--lt-main-text);
   --sub-text: var(--lt-sub-text);
+  --hover: var(--lt-hover);
 }
 
 .--dark-mode {
@@ -30,6 +33,7 @@
   --card-background: var(--dt-card-background);
   --main-text: var(--dt-main-text);
   --sub-text: var(--dt-sub-text);
+  --hover: var(--dt-hover);
 }
 
 :root {
@@ -39,12 +43,14 @@
   --dt-card-background: hsl(228, 28%, 20%);
   --dt-main-text: hsl(0, 0%, 100%);
   --dt-sub-text: hsl(228, 34%, 66%);
+  --dt-hover: hsl(228, 26%, 27%);
   --lt-toggle: hsl(230, 22%, 74%);
   --lt-top-background: hsl(225, 100%, 98%);
   --lt-background: hsl(0, 0%, 100%);
   --lt-card-background: hsl(227, 47%, 96%);
   --lt-main-text: hsl(230, 17%, 14%);
   --lt-sub-text: hsl(228, 12%, 44%);
+  --lt-hover: hsl(232, 33%, 91%);
 }
 
 :root {
@@ -54,6 +60,7 @@
   --card-background: var(--lt-card-background);
   --main-text: var(--lt-main-text);
   --sub-text: var(--lt-sub-text);
+  --hover: var(--lt-hover);
 }
 
 .--dark-mode {
@@ -63,6 +70,7 @@
   --card-background: var(--dt-card-background);
   --main-text: var(--dt-main-text);
   --sub-text: var(--dt-sub-text);
+  --hover: var(--dt-hover);
 }
 
 * {
@@ -81,12 +89,14 @@ html {
   --dt-card-background: hsl(228, 28%, 20%);
   --dt-main-text: hsl(0, 0%, 100%);
   --dt-sub-text: hsl(228, 34%, 66%);
+  --dt-hover: hsl(228, 26%, 27%);
   --lt-toggle: hsl(230, 22%, 74%);
   --lt-top-background: hsl(225, 100%, 98%);
   --lt-background: hsl(0, 0%, 100%);
   --lt-card-background: hsl(227, 47%, 96%);
   --lt-main-text: hsl(230, 17%, 14%);
   --lt-sub-text: hsl(228, 12%, 44%);
+  --lt-hover: hsl(232, 33%, 91%);
 }
 
 :root {
@@ -96,6 +106,7 @@ html {
   --card-background: var(--lt-card-background);
   --main-text: var(--lt-main-text);
   --sub-text: var(--lt-sub-text);
+  --hover: var(--lt-hover);
 }
 
 .--dark-mode {
@@ -105,6 +116,7 @@ html {
   --card-background: var(--dt-card-background);
   --main-text: var(--dt-main-text);
   --sub-text: var(--dt-sub-text);
+  --hover: var(--dt-hover);
 }
 
 body {
@@ -193,12 +205,14 @@ body .intro .intro__toggle-button .toggle__button:checked:before {
   --dt-card-background: hsl(228, 28%, 20%);
   --dt-main-text: hsl(0, 0%, 100%);
   --dt-sub-text: hsl(228, 34%, 66%);
+  --dt-hover: hsl(228, 26%, 27%);
   --lt-toggle: hsl(230, 22%, 74%);
   --lt-top-background: hsl(225, 100%, 98%);
   --lt-background: hsl(0, 0%, 100%);
   --lt-card-background: hsl(227, 47%, 96%);
   --lt-main-text: hsl(230, 17%, 14%);
   --lt-sub-text: hsl(228, 12%, 44%);
+  --lt-hover: hsl(232, 33%, 91%);
 }
 
 :root {
@@ -208,6 +222,7 @@ body .intro .intro__toggle-button .toggle__button:checked:before {
   --card-background: var(--lt-card-background);
   --main-text: var(--lt-main-text);
   --sub-text: var(--lt-sub-text);
+  --hover: var(--lt-hover);
 }
 
 .--dark-mode {
@@ -217,6 +232,7 @@ body .intro .intro__toggle-button .toggle__button:checked:before {
   --card-background: var(--dt-card-background);
   --main-text: var(--dt-main-text);
   --sub-text: var(--dt-sub-text);
+  --hover: var(--dt-hover);
 }
 
 main .social-media__dashboard {
@@ -233,6 +249,10 @@ main .social-media__dashboard .dashboard__card {
   background-color: var(--card-background);
   max-width: 32.5rem;
   padding: 3rem 9.7rem 2.3rem 9.9rem;
+  cursor: pointer;
+}
+main .social-media__dashboard .dashboard__card:hover {
+  background-color: var(--hover);
 }
 main .social-media__dashboard .dashboard__card .card__media-user {
   display: flex;
@@ -311,12 +331,14 @@ main .social-media__dashboard .--youtube {
   --dt-card-background: hsl(228, 28%, 20%);
   --dt-main-text: hsl(0, 0%, 100%);
   --dt-sub-text: hsl(228, 34%, 66%);
+  --dt-hover: hsl(228, 26%, 27%);
   --lt-toggle: hsl(230, 22%, 74%);
   --lt-top-background: hsl(225, 100%, 98%);
   --lt-background: hsl(0, 0%, 100%);
   --lt-card-background: hsl(227, 47%, 96%);
   --lt-main-text: hsl(230, 17%, 14%);
   --lt-sub-text: hsl(228, 12%, 44%);
+  --lt-hover: hsl(232, 33%, 91%);
 }
 
 :root {
@@ -326,6 +348,7 @@ main .social-media__dashboard .--youtube {
   --card-background: var(--lt-card-background);
   --main-text: var(--lt-main-text);
   --sub-text: var(--lt-sub-text);
+  --hover: var(--lt-hover);
 }
 
 .--dark-mode {
@@ -335,6 +358,7 @@ main .social-media__dashboard .--youtube {
   --card-background: var(--dt-card-background);
   --main-text: var(--dt-main-text);
   --sub-text: var(--dt-sub-text);
+  --hover: var(--dt-hover);
 }
 
 main .overview {
@@ -356,6 +380,10 @@ main .overview__dashboard .dashboard__stats {
   width: 100%;
   max-width: 32.5rem;
   padding: 2.7rem 3.1rem 1.9rem 2.4rem;
+  cursor: pointer;
+}
+main .overview__dashboard .dashboard__stats:hover {
+  background-color: var(--hover);
 }
 main .overview__dashboard .stats__container {
   display: flex;
@@ -394,12 +422,14 @@ main .overview__dashboard .stats__container .stats__arrow-var .--negative {
   --dt-card-background: hsl(228, 28%, 20%);
   --dt-main-text: hsl(0, 0%, 100%);
   --dt-sub-text: hsl(228, 34%, 66%);
+  --dt-hover: hsl(228, 26%, 27%);
   --lt-toggle: hsl(230, 22%, 74%);
   --lt-top-background: hsl(225, 100%, 98%);
   --lt-background: hsl(0, 0%, 100%);
   --lt-card-background: hsl(227, 47%, 96%);
   --lt-main-text: hsl(230, 17%, 14%);
   --lt-sub-text: hsl(228, 12%, 44%);
+  --lt-hover: hsl(232, 33%, 91%);
 }
 
 :root {
@@ -409,6 +439,7 @@ main .overview__dashboard .stats__container .stats__arrow-var .--negative {
   --card-background: var(--lt-card-background);
   --main-text: var(--lt-main-text);
   --sub-text: var(--lt-sub-text);
+  --hover: var(--lt-hover);
 }
 
 .--dark-mode {
@@ -418,6 +449,7 @@ main .overview__dashboard .stats__container .stats__arrow-var .--negative {
   --card-background: var(--dt-card-background);
   --main-text: var(--dt-main-text);
   --sub-text: var(--dt-sub-text);
+  --hover: var(--dt-hover);
 }
 
 @media only screen and (min-width: 1024px) {

@@ -20,6 +20,11 @@ main {
             width: 100%;
             max-width: 32.5rem;
             padding: 2.7rem 3.1rem 1.9rem 2.4rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--hover);
+            }
         }
 
         .stats__container {
