@@ -421,8 +421,24 @@ main .overview__dashboard .stats__container .stats__arrow-var .--negative {
 }
 
 @media only screen and (min-width: 1024px) {
+  main .social-media__dashboard {
+    margin: 0 15rem;
+  }
+  main .overview__dashboard {
+    margin: 0 15rem;
+  }
+}
+@media only screen and (min-width: 1340px) {
+  main .social-media__dashboard {
+    margin: 0 18rem;
+  }
+  main .overview__dashboard {
+    margin: 0 18rem;
+  }
+}
+@media only screen and (min-width: 1420px) {
   body {
-    padding: 3.6rem 16.4rem 7.5rem 16.2rem;
+    padding: 2.5% 11.4% 5.2% 11.25%;
   }
   body .intro {
     display: flex;
@@ -435,9 +451,16 @@ main .overview__dashboard .stats__container .stats__arrow-var .--negative {
   body .intro hr {
     display: none;
   }
+  body main .social-media__dashboard {
+    margin: 0 auto;
+  }
   body main .social-media__dashboard .dashboard__card {
     max-width: 25.6rem;
     padding: 3.3rem 6.3rem 2.3rem;
+  }
+  body main .overview__dashboard {
+    max-width: 111.4rem;
+    margin: 0 auto;
   }
   body main .overview__dashboard .dashboard__stats {
     max-width: 25.6rem;
