@@ -1,0 +1,39 @@
+@import '../abstract/root';
+
+@media only screen and (min-width: 1024px) {
+    body {
+        padding: 3.6rem 16.4rem 7.5rem 16.2rem;
+
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .intro__text {
+                .text__title {
+                    font-size: $r-title;
+                }
+            }
+
+            hr {
+                display: none;
+            }
+        }
+
+        main {
+            .social-media__dashboard {
+                .dashboard__card {
+                    max-width: 25.6rem;
+                    padding: 3.3rem 6.3rem 2.3rem;
+                }
+            }
+
+            .overview__dashboard{
+                .dashboard__stats{
+                    max-width: 25.6rem;
+                }
+            }
+        }
+    }
+
+}
