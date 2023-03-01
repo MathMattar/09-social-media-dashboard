@@ -67,7 +67,7 @@ Os usuários devem ser capazes de:
   - Metodologia BEM.
 - **Sass/Scss:**
   - Divisão de responsabilidade em diferentes arquivos;
-  - Pseudoclasse e pseudoelemento;
+  - Pseudo-classe e pseudo-elemento;
   - Variáveis;
   - Flexbox;
   - Elementos interativos.
@@ -93,7 +93,7 @@ Os usuários devem ser capazes de:
 
 ### **SCSS**
 
-***Utilizar a pseudoelemento ```::before``` para criar sobreposição de cores no background***
+***Utilizar a pseudo-elemento ```::before``` para criar sobreposição de cores no background***
 
 ``` scss
 body {
